@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Samvidha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/media/logos/favicon.png" />
+
+  <!--<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto:300,400,500,600,700"
+    rel="stylesheet" />-->
+  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />-->
+
+  <link rel="stylesheet" id="layout-styles-anchor" href="%PUBLIC_URL%/fonts/fonts.css" />
+
+  <!-- SPLASH SCREEN-->
+  <link rel="stylesheet" id="layout-styles-anchor" href="%PUBLIC_URL%/css/splash-screen.css" />
+
+  <!--Bootstrap link-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+  <!--  Setup `default`, `es2015`, `es2016`, `es2017`, and `Intl` polyfills from https://cdn.polyfill.io/v3/url-builder/ -->
+  <script crossorigin="anonymous"
+    src="https://polyfill.io/v3/polyfill.min.js?features=es2017%2Cdefault%2Ces2015%2Ces2016%2CIntl"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
+</head>
+<!-- <body id="kt_body" direction="rtl" dir="rtl" style="direction: rtl">  RTL version body -->
+<!-- Standard version of body -->
+
+<body id="kt_body">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <div id="splash-screen" class="kt-splash-screen">
+    <img class="center" style="display: block; width: 30%;" src="%PUBLIC_URL%/media/logos/rk_logo.png" alt="RKCRM" />
+    <svg class="splash-spinner" viewBox="0 0 50 50">
+      <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+    </svg>
+  </div>
+  <div id="layout-portal"></div>
+  <script type="text/javascript">
+  /*
+    $(document).ready(function () {
+      $('.nav-link-collapse').on('click', function () {
+        $('.nav-link-collapse').not(this).removeClass('nav-link-show');
+        $(this).toggleClass('nav-link-show');
+      });
+      $(".toggle-menu").click(function () {
+        $("body").toggleClass("sidebar-menu-show");
+      });
+
+      $('.left-bar .sidebar .sidebar-menu ul li a').on('click', function () {
+        $("#kt_aside_toggle").click();
+        $('.left-bar .sidebar .sidebar-menu ul li a.active').removeClass('active');
+        $(this).addClass('active');
+
+        $('.sidebar-menu-links').hide();
+        $('#div' + $(this).attr('target')).show();
+        $('body').removeClass('sidebar-menu-show');
+      });
+    });
+    */
+  </script>
+  <script src="%PUBLIC_URL%/js/javascript.js"></script>
+</body>
+
+</html>
